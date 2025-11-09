@@ -25,13 +25,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { UserInfo } from "@workos-inc/authkit-nextjs";
-export function NavUser({
-  user,
-  isLoading,
-}: {
-  user: UserInfo["user"] | null;
-  isLoading: boolean;
-}) {
+export function NavUser({ user }: { user: UserInfo["user"] | null }) {
   const { isMobile } = useSidebar();
 
   return (
